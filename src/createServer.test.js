@@ -97,7 +97,7 @@ describe('A HTTP Server', () => {
             const length = 20
             const width = 10
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ mathBasic: {}, figureCalculator })
+            const server = createServer({ figureCalculator })
 
             // Action
             const response = await server.inject({
@@ -118,7 +118,7 @@ describe('A HTTP Server', () => {
             const length = 30
             const width = 5
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ mathBasic: {}, figureCalculator })
+            const server = createServer({ figureCalculator })
 
             // Action
             const response = await server.inject({
@@ -140,7 +140,7 @@ describe('A HTTP Server', () => {
             const sideB = 7
             const base = 10
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ mathBasic: {}, figureCalculator })
+            const server = createServer({ figureCalculator })
 
             // Action
             const response = await server.inject({
@@ -161,7 +161,7 @@ describe('A HTTP Server', () => {
             const base = 10
             const height = 15
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ mathBasic: {}, figureCalculator })
+            const server = createServer({ figureCalculator })
 
             // Action
             const response = await server.inject({
