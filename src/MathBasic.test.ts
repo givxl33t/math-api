@@ -1,4 +1,4 @@
-const MathBasic = require('./MathBasic')
+import { MathBasic } from './MathBasic'
 
 describe('A MathBasic', () => {
     it('should cointains add, subtract, multiply, and divide function', () => {

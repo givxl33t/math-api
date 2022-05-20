@@ -1,6 +1,6 @@
-const createServer = require('./createServer')
-const FigureCalculator = require('./FigureCalculator')
-const MathBasic = require('./MathBasic')
+import { FigureCalculator } from './FigureCalculator'
+import { MathBasic } from './MathBasic'
+import { createServer } from './createServer'
 
 const start = async () => {
     const figureCalculator = new FigureCalculator(MathBasic)

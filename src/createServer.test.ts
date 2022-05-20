@@ -1,6 +1,6 @@
-const createServer = require('./createServer')
-const MathBasic = require('./MathBasic')
-const FigureCalculator = require('./FigureCalculator')
+import { FigureCalculator } from './FigureCalculator'
+import { MathBasic } from './MathBasic'
+import { createServer } from './createServer'
 
 describe('A HTTP Server', () => {
     describe('when GET /add', () => {
@@ -97,7 +97,7 @@ describe('A HTTP Server', () => {
             const length = 20
             const width = 10
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ figureCalculator })
+            const server = createServer({ mathBasic: {} ,figureCalculator })
 
             // Action
             const response = await server.inject({
@@ -118,7 +118,7 @@ describe('A HTTP Server', () => {
             const length = 30
             const width = 5
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ figureCalculator })
+            const server = createServer({ mathBasic: {} ,figureCalculator })
 
             // Action
             const response = await server.inject({
@@ -140,7 +140,7 @@ describe('A HTTP Server', () => {
             const sideB = 7
             const base = 10
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ figureCalculator })
+            const server = createServer({ mathBasic: {} ,figureCalculator })
 
             // Action
             const response = await server.inject({
@@ -161,7 +161,7 @@ describe('A HTTP Server', () => {
             const base = 10
             const height = 15
             const figureCalculator = new FigureCalculator(MathBasic)
-            const server = createServer({ figureCalculator })
+            const server = createServer({ mathBasic: {} ,figureCalculator })
 
             // Action
             const response = await server.inject({

@@ -1,5 +1,5 @@
-const FigureCalculator = require('./FigureCalculator')
-const MathBasic = require('./MathBasic')
+import { FigureCalculator } from './FigureCalculator'
+import { MathBasic } from './MathBasic'
 
 describe('A FigureCalculator', () => {
     it('should contain calculateRectanglePerimeter, calculateRectangleArea, calculateTrianglePerimter, and calculateTriangleArea functions', () => {

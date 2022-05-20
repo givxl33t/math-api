@@ -1,4 +1,5 @@
 class FigureCalculator {
+    _mathBasic: any
     constructor (mathBasic) {
         this._mathBasic = mathBasic
     }
@@ -46,4 +47,4 @@ class FigureCalculator {
     }
 }
 
-module.exports = FigureCalculator
+export { FigureCalculator }

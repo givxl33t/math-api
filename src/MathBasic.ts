@@ -30,4 +30,4 @@ const MathBasic = {
     }
 }
 
-module.exports = MathBasic
+export { MathBasic }
